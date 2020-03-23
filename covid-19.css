@@ -1,0 +1,206 @@
+/* Setup */
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+%clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, span, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 10pt;
+    
+}
+
+/* Textual elements */
+h1, h2 {
+    margin-bottom: 0rem;
+    /*margin-top: 1rem;*/
+    font-weight: 500;
+    line-height: 1;
+    color: #111;
+}
+
+h1 {
+    font-size: 15pt;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 12pt;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+abbr {
+    font-size: 18px;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-weight: 500;
+}
+
+legend {
+    margin-bottom: 5pt;
+    font-size: 10pt;
+    font-style: italic;
+}
+
+a {
+    color: #bd081c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #111;
+}
+
+strong {
+    font-weight: 500;
+}
+
+emph {
+    font-style: italic;
+}
+
+hr {
+    position: relative;
+    margin: 0;  
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border-top: 2px solid #222;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 10pt;
+  margin: 5px 0 5px 0;
+}
+
+td, th {
+    text-align: right;
+    vertical-align: middle;
+}
+
+th {
+    border-bottom: 1px solid #222;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+th.country {
+    /*text-align: center;*/
+    width: 15%;
+}
+
+th.aux {
+    /*text-align: center;*/
+    width: 10%;
+}
+
+th.plot {
+    text-align: center;
+    width: 45%;
+}
+
+td {
+    /*border-bottom: 1px solid #ddd;*/
+    height: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+
+tr:hover {
+  background-color: #f8f8f8;
+  color: #bd081c;
+}
+
+
+dl {
+    overflow: hidden;
+    margin: 0 0 1rem 0;
+}
+
+dt {
+    font-size: 18px;
+    font-weight: 500;
+    float: left;
+    display: inline;
+    width: 8em;
+    padding-right: 0.5rem;
+}
+
+dd {
+    font-size: 18px;
+    display: block;
+    padding: 0;
+    margin: 0 0 0 9em;
+    padding-right: 0;
+}
+
+
+
+/* Custom classes */
+.content {
+    max-width: 780px;
+    padding-left:  1rem;
+    padding-right: 1rem;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+.base {
+    stroke: #222;
+    fill: #f4f4f4;
+    stroke-width: 0.5;
+}
+
+.tt {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tt .tx {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tt:hover .tx {
+  visibility: visible;
+}

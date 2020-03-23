@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>COVID-19 • David Souza</title>
+    
+    <link rel="stylesheet" href="covid-19.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <!-- Content  -->
+    <div class="content">
+        <h1>Information on COVID-19</h1>
+        
+        <hr/>
+        <div style="width: 100%; display: table;">
+        <div style="display: table-row">    
+            <div style="width: 350px; display: table-cell; ">
+                <dl>
+                    <dt>Confirmed cases</dt>
+                        <dd></strong><span class="cnf-today"></span> (+<span class="cnf-diff"></span>)</dd>
+                    <dt>Deaths</dt>
+                        <dd></strong><span class="dth-today"></span> (+<span class="dth-diff"></span>)</dd>
+                    <dt>Recovered</dt>
+                        <dd></strong><span class="rec-today"></span> (+<span class="rec-diff"></span>)</dd>
+                </dl>
+                
+            <legend><emph>Last updated on <span id='uts'></span>.</emph></legend>
+            
+            <p><abbr>EN</abbr> | Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered  SARS-CoV-2 coronavirus.</p>
+            
+            <p>Most people infected with virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
+            
+            <p><strong>The best way to prevent and slow down transmission is to be well informed about the virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol-based sanitiser frequently and not touching your face.</strong></p>
+            
+            <legend>Adapted from: <a href="https://www.who.int/health-topics/coronavirus">World Health Organisation</a></legend>
+            
+            <hr/>
+            
+            <p><abbr>PT</abbr> | COVID-19 (<emph>Coronavirus disease</emph>) é uma doença infecciosa causada pelo recém-descoberto coronavírus SARS-CoV-2.</p>
+            
+            <p>A maioria das pessoas infectadas apresentará sintomas fracos a moderados de uma doença respiratória e se recuperarão sem tratamentos especiais. Idosos, e aqueles com outros problemas de saúde como doenças cardiovasculares, diabetes, problemas respiratórios crônicos e câncer possuem mais chances de apresentarem casos mais graves.</p>
+            
+            <p><strong>A melhor forma de previnir e diminuir tansmissões é se manter informado sobre o vírus causador da COVID-19, sobre a doença e como é transmitida. Proteja-se e projeta outros da infecção lavando as mãos ou usando álcool em gel com frequência, evitando tocar o próprio rosto.</strong></p>
+            
+            <legend>Traduzido e adaptado do inglês. Fonte: <a href="https://www.who.int/health-topics/coronavirus">World Health Organisation</a></legend>
+            </div>
+            
+            
+            <div style="display: table-cell; padding-left: 25px;">
+                <h2>Highest number of cases</h2>
+                <div class='bp-cases'></div>
+                
+                <h2>Highest number of deaths</h2>
+                <div class='bp-deaths'></div>
+                
+                <h2>Highest death rate</h2>
+                <div class='bp-fr'></div>
+            </div>
+            </div>    
+        </div>
+        
+        <br/>
+        
+        <!-- <div> -->
+        <h2>Table of cases</h2>
+        <table id='ttable'>
+            <thead>
+                <th class="country">Country</th>
+                <th class="aux"><span class="tt">Cases</span></th>
+                <th class="aux"><span class="tt">Deaths</span></th>
+                <th class="aux"><span class="tt">Recov'd.<span class="tx">Recovered</span></span></th>
+                <th class="aux"><span class="tt">F (%)<span class="tx">Fatality rate</span></span></th>
+                <th class="plot"><span class="tt">No. of cases over time</span></th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+
+    <br/><hr/>
+    <div>
+        <p>2020 <strong>David Souza Pinto</strong> · <a href="https://souzapd.github.io">souzapd.github.io</a></p>
+        <p>Made with D3 and Python.
+        Data source: <a href="https://github.com/CSSEGISandData/COVID-19">CSSEGISandData / COVID-19 @ GitHub</a></p>
+        <p><emph>Last updated on <span id='uts'></span>.</emph></p>
+        <legend>This page is refreshed every day at 12.00pm (GMT-3). Deviations from official statistics may arise from update lags or from the datasets available on Github.</legend>
+    </div>
+
+    <script src="js/covid.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
