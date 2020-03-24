@@ -144,11 +144,11 @@ tr:hover {
 
 dl {
     overflow: hidden;
-    margin: 1rem 0 1rem 0;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 dt {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     float: left;
     display: inline;
@@ -157,7 +157,7 @@ dt {
 }
 
 dd {
-    font-size: 18px;
+    font-size: 16px;
     display: block;
     padding: 0;
     margin: 0 0 0 9em;
