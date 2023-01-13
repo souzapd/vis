@@ -1,1 +1,237 @@
-const _0x176f=['#mp','invertExtent','pageX','properties','range','svg','mean_score','line','translate(0\x20425)','#tooltip','then','tickSize','append','\x20±\x20','top','#entp','Number\x20of\x20listed\x20properties','.2f','text','\x20km','transform','pageY','12px','sd_score','tickFormat','entire','pow','push','entp','height','mouseout','filter','mousemove','scaleThreshold','sqrt','width','exponent','domain','geoPath','fill','#neighbourhood','datum','geoDistance','font-size','#000','.domain','style','attr','format','data','opacity','neighbourhood','round','#pct','call','map','parallels','fitSize','scaleSequential','stroke-width','Polygon','0.7','event','join','start','min','sort','length','features','json','rotate','log_n','classed','#c4c4c4','geoConicConformal','hidden','fill-opacity','interpolateBlues','rect','.2%','path','selectAll','select','data/rio-data.geojson','scalePow','geoBounds','#sp','0.90','palette','pct','text-anchor','.tick','isNaN'];(function(_0x5ea129,_0x176f6e){const _0x4039b6=function(_0x5158d){while(--_0x5158d){_0x5ea129['push'](_0x5ea129['shift']());}};_0x4039b6(++_0x176f6e);}(_0x176f,0x1f1));const _0x4039=function(_0x5ea129,_0x176f6e){_0x5ea129=_0x5ea129-0x0;let _0x4039b6=_0x176f[_0x5ea129];return _0x4039b6;};function set_projection(_0x4f7650,_0x5381b3){const [_0x429870,_0x1898a0]=_0x5381b3;const _0x287e8b={'C':_0x4f7650[0x0],'N':_0x4f7650[0x1],'S':_0x4f7650[0x2],'W':_0x4f7650[0x3],'E':_0x4f7650[0x4]};const _0x1c44a3={'type':_0x4039('0x1c'),'coordinates':[[[_0x287e8b['W'],_0x287e8b['N']],[_0x287e8b['E'],_0x287e8b['N']],[_0x287e8b['E'],_0x287e8b['S']],[_0x287e8b['W'],_0x287e8b['S']],[_0x287e8b['W'],_0x287e8b['N']]]]};let _0x29bc52=d3[_0x4039('0x2a')]()[_0x4039('0x18')]([_0x287e8b['S'],_0x287e8b['N']])[_0x4039('0x26')]([-_0x287e8b['C'],0x0])[_0x4039('0x19')]([_0x429870,_0x1898a0],_0x1c44a3);return _0x29bc52;};function choropleth(_0x2c0c86,_0x552832,_0x36c2d5,_0x3e1d79,_0x1f0c73,_0x41a81e){const _0x55bf25=d3[_0x4039('0x6')](_0x552832);const _0x34d8d3=d3[_0x4039('0x32')](_0x3e1d79)[_0x4039('0x49')](_0x4039('0x42'))[_0x4039('0xf')]('width',_0x1f0c73)[_0x4039('0xf')]('height',_0x41a81e);d3[_0x4039('0x25')](_0x2c0c86)[_0x4039('0x47')](_0x5d7f1f=>{_0x5d7f1f['features'][_0x4039('0x17')](_0x556047=>{_0x556047[_0x4039('0x40')][_0x4039('0x59')]=+_0x556047[_0x4039('0x40')]['entire']/+_0x556047[_0x4039('0x40')]['n'];});const _0x4c4907=pgen(_0x5d7f1f[_0x4039('0x24')])[_0x4039('0x38')];colorkey(_0x5d7f1f);distscale(_0x5d7f1f,_0x552832,_0x36c2d5);_0x34d8d3[_0x4039('0x31')](_0x4039('0x30'))[_0x4039('0x11')](_0x5d7f1f[_0x4039('0x24')])[_0x4039('0x1f')](_0x4039('0x30'))[_0x4039('0xf')]('d',_0x55bf25)[_0x4039('0xf')](_0x4039('0x2c'),'0.7')[_0x4039('0xe')](_0x4039('0x7'),_0x595382=>{const _0x311ea2=_0x595382[_0x4039('0x40')][_0x4039('0x27')];return _0x311ea2?_0x4c4907(_0x311ea2):_0x4039('0x29');})['on'](_0x4039('0x0'),displayToolTip)['on'](_0x4039('0x5b'),hideToolTip);});};function displayToolTip(_0x57c375){d3[_0x4039('0x32')](_0x4039('0x46'))[_0x4039('0x28')](_0x4039('0x2b'),![]);d3['select'](this)[_0x4039('0xf')](_0x4039('0x2c'),_0x4039('0x37'));d3[_0x4039('0x32')](_0x4039('0x46'))[_0x4039('0xe')]('left',d3[_0x4039('0x1e')][_0x4039('0x3f')]-0x19+'px')[_0x4039('0xe')](_0x4039('0x4b'),d3[_0x4039('0x1e')][_0x4039('0x52')]+0x19+'px')[_0x4039('0xe')](_0x4039('0x12'),0x1)[_0x4039('0x32')](_0x4039('0x8'))[_0x4039('0x4f')](_0x57c375[_0x4039('0x40')][_0x4039('0x13')]);d3[_0x4039('0x32')](_0x4039('0x46'))[_0x4039('0x32')]('#n')[_0x4039('0x4f')](_0x57c375[_0x4039('0x40')]['n']);d3[_0x4039('0x32')]('#tooltip')[_0x4039('0x32')](_0x4039('0x15'))['text'](d3[_0x4039('0x10')](_0x4039('0x2f'))(_0x57c375[_0x4039('0x40')][_0x4039('0x39')]));d3['select'](_0x4039('0x46'))[_0x4039('0x32')]('#ent')[_0x4039('0x4f')](_0x57c375[_0x4039('0x40')][_0x4039('0x56')]);d3[_0x4039('0x32')](_0x4039('0x46'))[_0x4039('0x32')](_0x4039('0x4c'))[_0x4039('0x4f')](d3['format'](_0x4039('0x2f'))(_0x57c375[_0x4039('0x40')][_0x4039('0x59')]));d3[_0x4039('0x32')](_0x4039('0x46'))[_0x4039('0x32')](_0x4039('0x3d'))[_0x4039('0x4f')](d3[_0x4039('0x10')](_0x4039('0x4e'))(_0x57c375[_0x4039('0x40')]['mean_price']));d3['select'](_0x4039('0x46'))[_0x4039('0x32')](_0x4039('0x36'))[_0x4039('0x4f')]('\x20±\x20'+d3[_0x4039('0x10')](_0x4039('0x4e'))(_0x57c375[_0x4039('0x40')]['sd_price']));d3[_0x4039('0x32')](_0x4039('0x46'))['select']('#ms')[_0x4039('0x4f')](d3['format'](_0x4039('0x4e'))(_0x57c375[_0x4039('0x40')][_0x4039('0x43')]));d3[_0x4039('0x32')](_0x4039('0x46'))[_0x4039('0x32')]('#ss')[_0x4039('0x4f')](_0x4039('0x4a')+d3[_0x4039('0x10')](_0x4039('0x4e'))(_0x57c375[_0x4039('0x40')][_0x4039('0x54')]));};function hideToolTip(){d3[_0x4039('0x32')](_0x4039('0x46'))[_0x4039('0x28')](_0x4039('0x2b'),!![]);d3[_0x4039('0x32')](this)[_0x4039('0xf')](_0x4039('0x2c'),_0x4039('0x1d'));};function colorkey(_0x3eb07c){const _0x9a1e3c=pgen(_0x3eb07c[_0x4039('0x24')]);const _0x4eb5bd=_0x9a1e3c['palette'];const _0x2f2420=_0x9a1e3c['ll'];const _0x3ef174=_0x9a1e3c['ul'];const _0x7af401=d3[_0x4039('0x34')]()[_0x4039('0x4')](1.2)[_0x4039('0x5')]([_0x2f2420,_0x3ef174])['range']([0x0,0x15e]);const _0x14031f=d3[_0x4039('0x10')]('.2f');const _0x58ccb9=d3['axisBottom'](_0x7af401)[_0x4039('0x48')](0xf)['tickValues'](_0x4eb5bd[_0x4039('0x5')]())[_0x4039('0x55')](_0x158568=>Math[_0x4039('0x14')](0xa**_0x14031f(_0x158568)));const _0x4e99bd=d3['select']('svg')['append']('g')['attr']('transform','translate(0\x2040)')[_0x4039('0x16')](_0x58ccb9);_0x4e99bd[_0x4039('0x32')](_0x4039('0xd'))['remove']();_0x4e99bd[_0x4039('0x31')](_0x4039('0x2e'))[_0x4039('0x11')](_0x4eb5bd['range']()[_0x4039('0x17')](_0x2569f4=>{var _0x26d05e=_0x4eb5bd[_0x4039('0x3e')](_0x2569f4);if(_0x26d05e[0x0]==null)_0x26d05e[0x0]=_0x7af401[_0x4039('0x5')]()[0x0];if(_0x26d05e[0x1]==null)_0x26d05e[0x1]=_0x7af401[_0x4039('0x5')]()[0x1];return _0x26d05e;}))[_0x4039('0x1f')](_0x4039('0x2e'))[_0x4039('0xf')](_0x4039('0x28'),_0x4039('0x3b'))[_0x4039('0xf')](_0x4039('0x5a'),0x6)[_0x4039('0xf')]('x',_0x38ed5c=>_0x7af401(_0x38ed5c[0x0]))[_0x4039('0xf')](_0x4039('0x3'),_0xc1c0de=>_0x7af401(_0xc1c0de[0x1])-_0x7af401(_0xc1c0de[0x0]))[_0x4039('0xf')](_0x4039('0x7'),_0x40e34b=>_0x4eb5bd(_0x40e34b[0x0]))['style']('stroke','transparent')[_0x4039('0xe')](_0x4039('0x2c'),_0x4039('0x1d'));_0x4e99bd[_0x4039('0x49')](_0x4039('0x4f'))['attr']('y',-0x5)[_0x4039('0xf')](_0x4039('0x7'),'#000')['attr'](_0x4039('0x3a'),_0x4039('0x20'))['style'](_0x4039('0xb'),'12px')[_0x4039('0x4f')](_0x4039('0x4d'));_0x4e99bd[_0x4039('0x31')](_0x4039('0x44'))[_0x4039('0xe')](_0x4039('0x1b'),'1');};function distscale(_0x503833,_0x127399,_0x58dd8c,_0x5f1611=0x18e3){const _0x4e4276=d3[_0x4039('0x32')](_0x4039('0x42'))[_0x4039('0x9')](dist2px(_0x503833,_0x127399,_0x58dd8c,_0x5f1611))[_0x4039('0x49')]('g')[_0x4039('0xf')](_0x4039('0x51'),_0x4039('0x45'));_0x4e4276[_0x4039('0x49')](_0x4039('0x2e'))[_0x4039('0xf')](_0x4039('0x5a'),0x1)['attr'](_0x4039('0x3'),_0x305388=>_0x305388)[_0x4039('0xf')](_0x4039('0x7'),_0x4039('0xc'));_0x4e4276[_0x4039('0x49')](_0x4039('0x4f'))[_0x4039('0xf')]('y',-0x5)['attr'](_0x4039('0x7'),_0x4039('0xc'))[_0x4039('0xf')]('text-anchor',_0x4039('0x20'))[_0x4039('0xe')](_0x4039('0xb'),_0x4039('0x53'))['text'](_0x58dd8c+_0x4039('0x50'));};function pgen(_0x36555d){var _0x526c3d=_0x36555d[_0x4039('0x17')](_0x472a8c=>parseFloat(_0x472a8c[_0x4039('0x40')][_0x4039('0x27')]))[_0x4039('0x5c')](_0x3bef57=>!Number[_0x4039('0x3c')](_0x3bef57))[_0x4039('0x22')]((_0x37ae90,_0x5983cb)=>_0x37ae90-_0x5983cb);let _0x264e14=d3[_0x4039('0x2d')];let _0x368d6e=d3[_0x4039('0x41')](0x0,0x1,0.15);_0x368d6e[_0x4039('0x58')](0x1);const _0x153f24=d3[_0x4039('0x21')](_0x526c3d,_0x2549ff=>+_0x2549ff);const _0x3d6ffa=d3['max'](_0x526c3d,_0x475bd7=>+_0x475bd7);const _0x52e9cd=_0x368d6e[_0x4039('0x17')](_0x5d1af5=>d3['quantile']([_0x153f24,_0x3d6ffa],_0x5d1af5));const _0x4b639e=_0x52e9cd[_0x4039('0x23')];const _0x39650c=_0x52e9cd['map'](_0x17182d=>d3[_0x4039('0x1a')]([_0x153f24,_0x3d6ffa],_0x264e14,_0x4b639e)(_0x17182d));const _0x4aac21=d3[_0x4039('0x1')]()[_0x4039('0x5')](_0x52e9cd)[_0x4039('0x41')](_0x39650c);return{'palette':_0x4aac21,'ll':_0x153f24,'ul':_0x3d6ffa};};function dist2px(_0x4999f0,_0x31db1d,_0x27389a,_0x23137a=0x18e3){const _0x56c742=d3[_0x4039('0x35')](_0x4999f0);const _0x5411ea=d3[_0x4039('0xa')](_0x56c742[0x0],_0x56c742[0x1]);const _0x3decf2=_0x23137a;const _0x35b409=_0x3decf2*_0x5411ea;const _0x542bda=[_0x31db1d(_0x56c742[0x0]),_0x31db1d(_0x56c742[0x1])];const _0x4f4e91=_0x542bda[0x1][0x0]-_0x542bda[0x0][0x0];const _0x597b17=_0x542bda[0x0][0x1]-_0x542bda[0x1][0x1];const _0x36161e=Math[_0x4039('0x2')](Math[_0x4039('0x57')](_0x4f4e91,0x2)+Math[_0x4039('0x57')](_0x597b17,0x2));const _0x5e4ec8=_0x36161e/_0x35b409;const _0x2da71e=_0x5e4ec8*_0x27389a;return _0x2da71e;};const [width,height]=[0x320,0x1c2];const bbox_RJ=[-43.4722,-23.082893,-22.74602,-43.096863,-43.795432];const gd=_0x4039('0x33');const proj=set_projection(cp=bbox_RJ,dim=[width,height]);choropleth(gd,proj,0x5,'#interactive-cp',width,height);
+// airbnb-rio.js
+// 2020 David Souza Pinto
+
+// set_path: defines the projection, retuns path
+function set_projection(cp, dim) {
+    // convenience constants: dimensions and limits
+    const [width, height] = dim;
+    const compass = { C: cp[0], N: cp[1], S: cp[2],  W: cp[3], E: cp[4] };
+  
+    // bbox: bounding box
+    const bbox = {
+        'type': 'Polygon',
+        'coordinates': [[
+            [compass.W, compass.N],
+            [compass.E, compass.N],
+            [compass.E, compass.S],
+            [compass.W, compass.S],
+            [compass.W, compass.N]
+        ]]
+    }
+  
+    // projection setup + path return
+    let projection = d3.geoConicConformal()
+        .parallels([compass.S, compass.N])
+        .rotate([-compass.C, 0])      
+        .fitSize([width, height], bbox);
+        
+    return projection;
+};
+  
+// Loads data, the div name, width, height, and CSS class to setup SVG 
+function choropleth(geo, proj, dist_scale, div_name, w, h) {
+    const path = d3.geoPath(proj);
+    const svg = d3.select(div_name)
+        .append('svg')
+        .attr('width', w)
+        .attr('height', h);
+        
+    d3.json(geo).then((data) => {
+        data.features.map((i) => {
+            i.properties.entp = +i.properties.entire / +i.properties.n;
+        });
+        
+        const colour = pgen(data.features)['palette'];
+        colorkey(data);
+        distscale(data, proj, dist_scale);
+        svg.selectAll('path')
+            .data(data.features)
+            .join('path')
+            .attr('d', path)
+            .attr('fill-opacity', '0.7')
+            .style('fill', (d) => {
+                const v = d.properties.log_n
+                return v ? colour(v) : '#c4c4c4';
+            })
+            .on('mousemove', displayToolTip)
+            .on('mouseout', hideToolTip);
+    });        
+};
+
+function displayToolTip(d) {
+    // -- update the tooltip position and values
+    d3.select('#tooltip').classed('hidden', false);
+    d3.select(this)
+      .attr('fill-opacity', '0.90')
+    // -- position of the tooltip
+    d3.select('#tooltip')
+      .style('left', d3.event.pageX - 25 + 'px')
+      .style('top', d3.event.pageY + 25 + 'px')
+      .style('opacity', 1)
+      .select('#neighbourhood')
+      .text(d.properties.neighbourhood);
+    // -- no. of properties + pct
+    d3.select('#tooltip')
+      .select('#n')
+      .text(d.properties.n);
+    d3.select('#tooltip')
+      .select('#pct')
+      .text(d3.format('.2%')(d.properties.pct)); 
+    // -- no. of entire properties
+    d3.select('#tooltip')
+      .select('#ent')
+      .text(d.properties.entire);
+    d3.select('#tooltip')
+      .select('#entp')
+      .text(d3.format('.2%')(d.properties.entp));
+    // -- avg. price + std dev 
+    d3.select('#tooltip')
+      .select('#mp')
+      .text(d3.format('.2f')(d.properties.mean_price));
+    d3.select('#tooltip')
+      .select('#sp')
+      .text(' ± ' + d3.format('.2f')(d.properties.sd_price));
+    // -- avg. score + std dev 
+    d3.select('#tooltip')
+      .select('#ms')
+      .text(d3.format('.2f')(d.properties.mean_score));
+    d3.select('#tooltip')
+      .select('#ss')
+      .text(' ± ' + d3.format('.2f')(d.properties.sd_score));
+};
+
+function hideToolTip() {
+    d3.select('#tooltip').classed('hidden', true);
+    d3.select(this).attr('fill-opacity', '0.7');
+};
+
+// Colour gradient
+function colorkey(data) {
+    const o         = pgen(data.features);
+    const threshold = o['palette'];
+    const xt        = o['extent']
+    const scale     = d3.scalePow()
+                        .exponent(1.2)
+                        .domain(xt)
+                        .range([0, 350]);
+    
+    const formatNumber = d3.format('.2f');
+    const xAxis = d3.axisBottom(scale)
+        .tickSize(15)
+        .tickValues(threshold.domain()) // alt. 
+        .tickFormat((d) => Math.round(10 ** formatNumber(d)));
+        
+    const g = d3.select('svg')
+        .append('g')
+        .attr('transform', 'translate(0 40)')
+        .call(xAxis);
+    
+    g.select('.domain').remove();
+    g.selectAll('rect')
+        .data(threshold.range().map((color) => {
+            var d = threshold.invertExtent(color);
+            if (d[0] == null) d[0] = scale.domain()[0];
+            if (d[1] == null) d[1] = scale.domain()[1];
+            return d;
+        }))
+        .join('rect')
+        .attr('classed', '.tick')
+        .attr('height', 6)
+        .attr('x', (d) =>  scale(d[0]))
+        .attr('width', (d) => (scale(d[1]) - scale(d[0])))
+        .attr('fill', (d) => threshold(d[0]))
+        .style('stroke', 'transparent')
+        .style('fill-opacity', '0.7');
+        
+    g.append('text')
+        .attr('y', -5)
+        .attr('fill', '#000')
+        .attr('text-anchor', 'start')
+        .style('font-size', '12px')
+        .text('Number of listed properties');
+        
+    g.selectAll('line').style('stroke-width', '1');
+};
+
+// Distance scale
+function distscale(data, proj, dist, earth_radius = 6371) {
+    const scale = d3.select('svg')
+            .datum(dist2px(data, proj, dist, earth_radius))
+            .append('g')
+            .attr('transform', 'translate(0 425)');
+        
+        // draws rect
+        scale.append('rect')
+            .attr('height', 1)
+            .attr('width', (d) => d)
+            .attr('fill', '#000');
+        
+        // includes the length 
+        scale.append('text')
+            .attr('y', -5)
+            .attr('fill', '#000')
+            .attr('text-anchor', 'start')
+            .style('font-size', '12px')
+            .text(`${dist} km`);
+};
+
+// Palette generator
+function pgen(d) {
+    // extracting values from the data
+    var vals = d
+        .map((i) => parseFloat(i.properties.log_n))
+        .filter((i) => !Number.isNaN(i))
+        .sort((a, b) => a - b);
+    
+    // setting up the palette, the extent and the range
+    const pal = d3.interpolateBlues;
+    const x = d3.extent(vals)
+    const r = d3.range(0, 1, .15);
+    r.push(1);
+    
+    // getting the quantile range and the length
+    // to declare the palette and the hues
+    const q = r.map((i) => d3.quantile(x, i));
+    const l = q.length;
+    const palette = q.map((i) => d3.scaleSequential(x, pal, l)(i));
+    const hues = d3.scaleThreshold()
+        .domain(q)
+        .range(palette);
+    
+    return { palette: hues, extent: x };
+};
+
+// Conversion of pixels to distance
+function dist2px(geo, proj, dist, earth_radius = 6371) {
+    // Calculations done for km
+    // gets boundaries to calculate the arc length
+    const boundaries = d3.geoBounds(geo);
+    const rad = d3.geoDistance(boundaries[0], boundaries[1]);
+    const l_arc = earth_radius * rad;
+
+    // calculating the projected hypothenuse 
+    const bounds_proj = [ proj(boundaries[0]), proj(boundaries[1]) ];
+    const w_proj = bounds_proj[1][0] - bounds_proj[0][0];
+    const h_proj = bounds_proj[0][1] - bounds_proj[1][1];
+    const hyp_proj = Math.sqrt((Math.pow(w_proj, 2)) + (Math.pow(h_proj, 2)));
+    
+    // gets the hypothenuse-arc ratio to get the pixel to distance
+    const factor = hyp_proj / l_arc;
+
+    return factor * dist;
+};
+
+// Height and Width
+const [width, height] = [800, 450];
+
+// Bounding boxes | center, north, south, west, east
+const bbox_RJ = [-43.4722, -23.082893, -22.746020, -43.096863, -43.795432];
+
+// File path
+const gd = 'data/rio-data.geojson';
+
+// Default set projection
+const proj = set_projection(cp = bbox_RJ, dim = [width, height])
+
+// draw map
+choropleth(gd, proj, 5, '#interactive-cp', width, height);
